@@ -1,12 +1,14 @@
 package com.capcun.health_shastra;
 
+import com.capcun.health_shastra.AddNewUser.AddNewUserApi;
+
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiControlller {
 
     // give url of your api folder
-    static final String url = "https://capcun.com/health_shastra/";
+    static final String url = "https://capcun.com/Health_Shastra/";
 
     private static ApiControlller clientObject;
 
@@ -34,6 +36,7 @@ public class ApiControlller {
 //    ExportAPI exportData() {return retrofit.create(ExportAPI.class);}
 //
 //    public fetching_message_api fetching_meesage_api() {return retrofit.create(fetching_message_api.class);}
+        AddNewUserApi getAddNewUserApiSet() {return retrofit.create(AddNewUserApi.class);}
 //
 
 
