@@ -66,20 +66,9 @@ public class BookAppointmentAdapter extends RecyclerView.Adapter<BookAppointment
     @Override
     public void onBindViewHolder(@NonNull LeadData holder, int position) {
 
-
-
-////            holder.avg.setText(dataholder2.get(position).getAvg_rating()+"");
-//            holder.stationname.setText(dataholder2.get(position).getEv_station_name());
-//            holder.address.setText(getAddress(dataholder2.get(position).getOwner_location().getLatitude(),dataholder2.get(position).getOwner_location().getLongitude()));
-//
-
-//        holder.tvType.setText("Type " + dataholder2.get(position).getType());
-
-//            holder.types.setText("Type " + dataholder2.get(position).getType());
-
-
-
-
+            holder.name.setText(dataholder2.get(position).getName());
+            holder.address.setText(dataholder2.get(position).getAddress());
+            holder.education.setText(dataholder2.get(position).getEducation());
 
 
 
@@ -112,7 +101,7 @@ public class BookAppointmentAdapter extends RecyclerView.Adapter<BookAppointment
 
     class LeadData extends RecyclerView.ViewHolder
     {
-        TextView stationname,address;
+        TextView name,address,education;
         LinearLayout card;
 
         LinearLayout bottomsheet;
@@ -121,6 +110,10 @@ public class BookAppointmentAdapter extends RecyclerView.Adapter<BookAppointment
         public LeadData(@NonNull View itemView)
         {
             super(itemView);
+            name = itemView.findViewById(R.id.name);
+            address = itemView.findViewById(R.id.address);
+            education = itemView.findViewById(R.id.education);
+            card = itemView.findViewById(R.id.card);
 //            bottomsheet = itemView.findViewById(R.id.bottomsheetcontainer);
 //            card = itemView.findViewById(R.id.card);
 //            stationname = itemView.findViewById(R.id.station_name);
@@ -135,47 +128,6 @@ public class BookAppointmentAdapter extends RecyclerView.Adapter<BookAppointment
     }
 
 
-//    public void showBottomSheetDialog(String tag)
-//    {
-//
-//        final BottomSheetDialog bottomSheetDialog1 = new BottomSheetDialog(
-//                context,R.style.BottomSheetDialogTheme
-//        );
-//
-//
-//        View bottomSheetView = LayoutInflater.from(context)
-//                .inflate(
-//                        R.layout.layout_bottom_sheet, (LinearLayout)findViewById(R.id.bottomsheetcontainer)
-//                );
-////        Owner allowner = mp.get(tag);
-//
-//
-////
-//        TextView stationname = bottomSheetView.findViewById(R.id.stationname);
-//        TextView price,remainingEnergy,address;
-////        Toast.makeText(this, ""+allowner.getPrice(), Toast.LENGTH_SHORT).show();
-//        price = bottomSheetView.findViewById(R.id.price);
-//        remainingEnergy = bottomSheetView.findViewById(R.id.remainingenergy);
-//        address = bottomSheetView.findViewById(R.id.address);
-////        Toast.makeText(this, ""+ Integer.toHexString(System.identityHashCode(allowner.getOwner_location())), Toast.LENGTH_SHORT).show();
-////        price.setText(allowner.getPrice()+"");
-////        remainingEnergy.setText(allowner.get);
-////        address.setText(getAddress());
-////        stationname.setText(allowner.getOwner_name());
-//
-//
-//
-//
-//
-//        Button direction= bottomSheetView.findViewById(R.id.btnUpdate);
-//        Button book = bottomSheetView.findViewById(R.id.book);
-//
-//
-//
-//
-//        bottomSheetDialog1.setContentView(bottomSheetView);
-//        bottomSheetDialog1.show();
-//    }
 
 
 

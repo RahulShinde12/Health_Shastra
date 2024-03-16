@@ -1,6 +1,7 @@
 package com.capcun.health_shastra;
 
 import com.capcun.health_shastra.AddNewUser.AddNewUserApi;
+import com.capcun.health_shastra.Fetch_Docters.fetch_rm_data_api;
 import com.capcun.health_shastra.Login_API.FetchCurrentOrdersApi;
 
 import retrofit2.Retrofit;
@@ -37,7 +38,8 @@ public class ApiControlller {
 //    ExportAPI exportData() {return retrofit.create(ExportAPI.class);}
 //
 //    public fetching_message_api fetching_meesage_api() {return retrofit.create(fetching_message_api.class);}
-        AddNewUserApi getAddNewUserApiSet() {return retrofit.create(AddNewUserApi.class);}
+    AddNewUserApi getAddNewUserApiSet() {return retrofit.create(AddNewUserApi.class);}
+    fetch_rm_data_api getRMdata() {return retrofit.create(fetch_rm_data_api.class);}
 
     FetchCurrentOrdersApi getFetchCurrentOrdersApi() {return retrofit.create(FetchCurrentOrdersApi.class);}
 //

@@ -1,11 +1,10 @@
-package com.capcun.health_shastra;
+package com.capcun.health_shastra.Fetch_Docters;
 
-
-public class BookAppointmentModel {
+public class FetchManagersResponseModel {
 
     String name,address,education;
 
-    public BookAppointmentModel(String name, String address, String education) {
+    public FetchManagersResponseModel(String name, String address, String education) {
         this.name = name;
         this.address = address;
         this.education = education;
