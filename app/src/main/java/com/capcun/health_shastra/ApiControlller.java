@@ -1,6 +1,7 @@
 package com.capcun.health_shastra;
 
 import com.capcun.health_shastra.AddNewUser.AddNewUserApi;
+import com.capcun.health_shastra.Login_API.FetchCurrentOrdersApi;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -37,6 +38,8 @@ public class ApiControlller {
 //
 //    public fetching_message_api fetching_meesage_api() {return retrofit.create(fetching_message_api.class);}
         AddNewUserApi getAddNewUserApiSet() {return retrofit.create(AddNewUserApi.class);}
+
+    FetchCurrentOrdersApi getFetchCurrentOrdersApi() {return retrofit.create(FetchCurrentOrdersApi.class);}
 //
 
 
