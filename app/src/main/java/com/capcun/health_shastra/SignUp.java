@@ -5,11 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class SignUp extends AppCompatActivity {
 
     private CheckBox agreeCheckBox;
+
+    EditText fname,lname,
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
